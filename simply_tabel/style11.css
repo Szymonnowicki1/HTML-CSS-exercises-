@@ -1,0 +1,13 @@
+.tabelka{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    
+
+}
+
+.variable{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
