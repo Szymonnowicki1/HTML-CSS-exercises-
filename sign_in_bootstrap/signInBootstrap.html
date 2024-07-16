@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logowanie</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: #ffffff;
+      }
+
+      .login-form {
+        padding: 30px;
+        background-color: #FFFFFF;
+        
+      }
+
+	  .form-group {
+  		margin-bottom: 0px;
+		}
+
+      .login-heading {
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .remember-me-label {
+        font-weight: normal;
+        margin-left: 0;
+      }
+
+      .form-control:focus {
+        border-color: #17A2B8;
+        box-shadow: none;
+      }
+
+	  .checkbox {
+		text-align: center;
+		margin-top: 0;
+	  }
+
+      .btn-primary {
+        background-color: #1737b8;
+      }
+
+      .btn-primary:hover {
+        background-color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 login-form">
+          <h2 class="login-heading">Zaloguj się</h2>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Adres email" autofocus >
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Hasło">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Zapamiętaj mnie
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Zaloguj się</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
