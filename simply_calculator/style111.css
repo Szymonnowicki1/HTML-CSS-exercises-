@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(88, 88, 88);
+    margin-top: 150px;
+}
+.container{
+    width: 680px;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 33%;
+    height: 80px;
+    padding-top: 30px;
+    background-color: rgb(116, 255, 116);
+    
+}
+#wynik{
+    text-align: right;
+    background-color: rgb(107, 146, 255);
+    width: 680px;
+    height: 35px;
+    margin-left: 33%;
+    border: 2px solid black;
+    font-size: 20px;
+}
