@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .box {
+            width: 40px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="addDiv()">dodaj</button>
+    <button onclick="removeDiv()">usun</button>
+    <button onclick="changeBackground()">zmien kolor</button>
+    <button onclick="changeText()">zmien tekst</button>
+
+    <div class="box">Div 1</div>
+    <div class="box">Div 2</div>
+    <div class="box">Div 3</div>
+    <div class="box">Div 4</div>
+
+    <script>
+        function addDiv() {
+            var newDiv = document.createElement("div");
+            newDiv.className = "box";
+            newDiv.innerHTML = "Nowy div";
+            document.body.appendChild(newDiv);
+        }
+
+        function removeDiv() {
+            var divs = document.getElementsByClassName("box");
+            if (divs.length > 0) {
+                divs[0].remove();
+            }
+        }
+
+        function changeBackground() {
+            var divs = document.getElementsByClassName("box");
+            if (divs.length > 2) {
+                divs[2].style.backgroundColor = "green";
+            }
+        }
+
+        function changeText() {
+            var divs = document.getElementsByClassName("box");
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].innerHTML = "nowy tekst";
+            }
+        }
+    </script>
+</body>
+</html>
